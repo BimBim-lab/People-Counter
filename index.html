@@ -5,15 +5,19 @@
     <body>
         <div class="container">
             <div>
-                <h1>People entered Stasiun Cepu:</h1>
+                <h1>People Counter</h1>
                 <h2 id="count-el">0</h2>
             </div>
-            <div id="costum-button">
+            <div class="costum-button">
                 <button id="increment-btn" onclick="increment()">INCREMENT</button>
+                <button id="decrement-btn" onclick="decrement()">DECREMENT</button>
+            </div>
+            <div class="costum-button">
                 <button id="save-btn" onclick="save()">SAVE</button>
+                <button id="reset-btn" onclick="reset()">RESET</button>
             </div>
             <div>
-                <p id="save-el">Kereta ke n: </p>
+                <p id="save-el">Counter: </p>
             </div>
         </div>
         <script src="index.js">

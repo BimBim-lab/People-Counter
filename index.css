@@ -19,20 +19,38 @@ h2 {
 
 .container{
     max-width: 800px;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4); /* optional glass effect */
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 button {
-    border: none;
+    border: 2px solid transparent;
+    cursor: pointer;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
     font-weight: bold;
     width: 200px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  transform: translateY(-3px);
+    box-shadow: 0 2px 4px white;
+}
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+    opacity: 0.9;
 }
 
-#costum-button{
+.costum-button{
     display: flex;          /* Aligns children inline horizontally */
     justify-content: center; /* Or: flex-start, space-between, etc */
     align-items: center; 
@@ -40,10 +58,28 @@ button {
 }
 
 #increment-btn {
-    background: darkred;
+    background: blue;
+}
+
+#decrement-btn {
+    background: red
 }
 
 #save-btn {
-    background: darkgreen;
+    background: green
 }
 
+
+#reset-btn {
+    background: rgb(56, 6, 6);
+}
+
+#save-el {
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: rgb(238, 223, 209);
+    padding: 12px;
+    border-radius: 10px;
+}
