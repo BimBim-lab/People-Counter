@@ -49,4 +49,5 @@ function reset() {
     countEl.textContent = 0
     count = 0
     localStorage.setItem("count", JSON.stringify(count))
+    localStorage.removeItem("history") // Clear history from local storage
 }
